@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: "Rubik";
+    font-size: 12px;  
+    color: #fff;  
+    background: rgb(255, 255, 255);
+}
+.overflow {
+    overflow-y: hidden;
+}
+/* mobile styles max-width 620px*/
+
+#company-logo img {
+    height: 2em;
+    color: #fff
+}
+.navbar {
+    padding: 16px 24px;
+    background:#fff;
+    position: relative;
+}
+.navbar a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);   
+}
+
+#company-logo {
+    letter-spacing: 0.2em;
+    position: absolute;
+    left: 2em;
+}
+#company-logo :nth-child(2) {
+    font-size: 1em;
+    font-weight: 900;
+}
+#company-logo :nth-child(3) {
+    font-size: 1em;
+    font-weight: 900;
+}
+#company-logo :nth-child(5) {
+    font-size: 1.5em;
+}
+
+
+
+/*menu style*/
+
+.menu-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    position: absolute;
+    top: 6em;
+    left: -1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+}
+
+.change {
+    left: 0;
+    overflow-y: hidden;
+}
+
+.change body {
+    position: fixed;
+}
+.menu-container a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.menu-container a:hover{
+    color:rgba(0, 0, 0, 1);
+    border-bottom: 2px solid #000;
+}
+.menu-container li {
+    list-style-type: none;
+    padding: 1.1em;
+}
+
+.social-media-icons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;       
+}
+
+
+.menu-container .fa {
+    padding-top: 2em;
+    margin-bottom: 2em;
+    color: rgba(0, 0, 0, 0.4); 
+    background: transparent;
+    text-decoration: none;    
+}
+
+.fa:hover{
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
+/* hamburger style */
+.hamburger {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+.container {
+    margin-top: 4em;
+    padding: 2em;
+    background: #000;
+    color: #fff
+}
+
+.container h4{
+    margin: 2em 0 1em;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: "Libre Baskerville";
+}
+
+
+.container p{
+    padding-bottom: 2em;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 2em;
+    font-family: "Libre Baskerville";
+}
+#image{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+button {       
+    border-color: #a8a6a1;
+    font-size: 1.3em;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.1s background-color linear, 0.1s color linear;
+    padding: 1.6rem 2.5rem;
+    letter-spacing: 0.2em;
+}
+button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+button:hover{
+    background: #a8a59b;
+    color: #000;
+}
+
+footer{
+    padding: 1em;
+    background: #353330;
+}
+#social-media-icons {
+    justify-content: right;
+    align-items: flex-start;
+    margin: 0;
+}
+
+footer p {
+    font-size: 0.6em;
+    padding: 1em; 
+    color: #fff; 
+    text-align: center;
+}
+
+footer .fa{
+    padding: 0.8em;
+    color: rgba(255, 255, 255, 0.9); 
+    background: transparent;
+    text-decoration: none;
+}
+
+/* small tablet screen size */
+@media screen and (min-width: 620px) {
+
+    body {
+        font-size: 16px;
+    }
+    
+    #image {
+        width: 100%;
+    }
+}
+
+/* tablet and laptops screen size */
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 16px;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navbar {
+        height: 10em;
+        background:#fff;
+    }
+    .menu-container {
+        position: relative;
+        left: 0;
+        height: 7em;
+        background: transparent;
+    }
+    .nav-menu {
+        display: flex;
+        position: absolute;
+        top: 0;
+    }
+    #company-logo {
+        width: 25%;
+        left: 37.5%;
+        text-align: center;
+        margin-top: 2em;
+    }
+    .social-media-icons li{
+        padding-top: 2em;
+        padding-bottom: 2em;
+        background: transparent;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        background: #fff;
+        height: 3.5em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .container{
+        padding: 1.5em;
+    }
+    .section-one{
+        grid-column: 1/5;
+        margin-right: 8em;
+    }
+    .section-two {
+        grid-column: 5/8;
+    }
+    #image {
+        width: 100%;
+        margin-top: 4em;
+    }
+    .section-two h4{
+        padding-top: 4em;
+    }
+    .btn{
+        margin-top: 4em;
+    }
+    
+}
+
+/* desktop screen size */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .navbar {
+        height: 10em;
+        background:#fff;
+    }
+    .menu-container {
+        position: relative;
+        left: 0;
+        height: 7em;
+        background: transparent;
+    }
+    .nav-menu {
+        display: flex;
+        position: absolute;
+        top: 0;
+    }
+    #company-logo {
+        width: 25%;
+        left: 37.5%;
+        text-align: center;
+        margin-top: 2em;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        background: #fff;
+        height: 3.5em;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .container{
+        padding: 1.5em;
+    }
+    .section-one{
+        grid-column: 1/5;
+        margin-right: 8em;
+    }
+    .section-two {
+        grid-column: 5/8;
+    }
+    #image {
+        width: 100%;
+        margin-top: 4em;
+    }
+    .section-two h4{
+        padding-top: 0;
+    }
+    .btn{
+        margin-top: 2em;
+    }
+    
+}

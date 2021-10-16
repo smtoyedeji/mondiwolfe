@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    box-sizing: border-box;
+    min-height: 100vh; 
+    background: url(../img/camera.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Yaldevi";
+    font-size: 12px;
+    overflow: hidden;
+    
+}
+
+h1 {
+    font-size: 8em;
+    text-align: center;
+    color: #fff;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+
+}
+
+h1 span::before {
+    content: "\A";
+    white-space: pre;    
+}
+
+h4{
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+button {
+    display: block;
+    font-size: 16px;
+    padding: 15px 15px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    background: transparent;
+    border: 3px solid #fff;
+    line-height: 1em;
+    transition: color 500ms ease-in-out, border-color 170ms cubic-bezier(0.37, -0.83, 0.9, 1.76);
+}
+
+button:hover{
+    background: #fff;
+    color: #000;
+}
+.social-media-icons ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.social-media-icons li{
+    list-style: none;
+}
+
+a {
+    color: transparent;
+}
+
+.fa {
+    color: #fff; 
+    background: transparent;
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 1px;  
+    transition: color 500ms ease-in-out, border-color 170ms cubic-bezier(0.37, -0.83, 0.9, 1.76);
+  
+}
+
+.fa:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 960px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 8em;
+        text-align: center;
+        color: #fff;
+        margin-top: 0.5em;
+        margin-bottom: 1.5em;
+    
+    }
+    h1 span::before {
+        content: "";  
+    }
+    button {
+        margin: 2em auto;
+    }
+
+}
