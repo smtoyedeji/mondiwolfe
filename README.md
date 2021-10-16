@@ -1,2 +1,2 @@
-# mondiwolfe.github.io
+# mondiwolfe
 A photographer online portfolio
